@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroundimage"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/noticeText"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:text="@string/notice"
+        android:layout_marginBottom="185dp"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:layout_above="@+id/btnCapturePicture"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra ="10dp" />
+
+
+        <Button
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="700dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="28dp"
+            android:background="@color/btn_bg"
+            android:paddingBottom="20dp"
+            android:text="@string/btnTakePicture"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

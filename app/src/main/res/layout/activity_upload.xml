@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <!-- To display picture taken -->
+
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:paddingTop="100dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- Videoview to preview recorded video -->
+
+    <!--  <VideoView
+          android:id="@+id/videoPreview"
+          android:layout_width="fill_parent"
+          android:layout_height="400dp"
+          android:visibility="gone"
+          android:layout_marginTop="15dp"/>-->
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/txt_font"
+        android:textSize="30dp"
+        android:layout_below="@+id/imgPreview"
+        android:layout_centerHorizontal="true"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginBottom="35dp"
+        android:visibility="gone"
+        android:layout_below="@+id/txtPercentage"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="700dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/btn_bg"
+        android:paddingBottom="20dp"
+        android:text="@string/btnUploadToServer"
+        android:textSize="50dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
